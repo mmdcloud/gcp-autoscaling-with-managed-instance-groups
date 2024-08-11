@@ -86,9 +86,9 @@ resource "google_compute_instance_template" "nodeapp-template" {
 	curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
 	sudo bash nodesource_setup.sh
 	sudo apt install nodejs -y
-	cd /home/surajmishratheboss
+	cd /home/deapoolandwolverine
 	git clone https://github.com/mmdcloud/gcp-autoscaling-with-managed-instance-groups
-	cd aws-autoscaling-with-load-balancing
+	cd gcp-autoscaling-with-managed-instance-groups
 	sudo cp scripts/nodejs_nginx.config /etc/nginx/sites-available/default
 	sudo service nginx restart
 	sudo npm i
