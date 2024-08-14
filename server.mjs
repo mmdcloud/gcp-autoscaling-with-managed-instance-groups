@@ -140,7 +140,7 @@ app.use(function (err, req, res, next) {
 })
 
 // Get values from env vars or defaults where not provided
-const port = 80
+const port = 3000
 
 // Start the server
 app.listen(port)
